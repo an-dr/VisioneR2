@@ -1,0 +1,3 @@
+[submodule "src/subprojects/microlog"]
+	path = src/subprojects/microlog
+	url = https://github.com/an-dr/microlog
