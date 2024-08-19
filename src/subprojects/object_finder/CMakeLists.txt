@@ -5,7 +5,6 @@ project(object_finder)
 find_package(OpenCV REQUIRED)
 include_directories(${OpenCV_INCLUDE_DIRS})
 
-include($ENV{ABCMAKE_PATH})
+include(ab.cmake)
 add_component(${PROJECT_NAME})
-target_link_components(${PROJECT_NAME} NAME microlog)
 target_link_libraries(${PROJECT_NAME} PRIVATE ${OpenCV_LIBS})

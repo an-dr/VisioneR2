@@ -1,0 +1,71 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+    ],
+    "extensions": {
+        "recommendations": [
+            "mesonbuild.mesonbuild",
+            "ms-vscode.cpptools",
+        ]
+    },
+    "settings": {
+        "C_Cpp.default.compileCommands": "/workspace/VisioneR2/src/builddir/compile_commands.json",
+        "C_Cpp.default.configurationProvider": "mesonbuild.mesonbuild"
+    },
+    "tasks": {
+        "version": "2.0.0",
+        "tasks": [
+            {
+                "label": "Configure",
+                "command": "meson setup build --wipe",
+                "type": "shell",
+                "args": [],
+                "options": {
+                    "cwd": "${workspaceFolder}/src"
+                },
+                "problemMatcher": [
+                    "$tsc"
+                ],
+                "presentation": {
+                    "reveal": "always",
+                    "clear": true
+                },
+                "group": "build"
+            },
+            {
+                "label": "Build",
+                "command": "meson compile -C build",
+                "type": "shell",
+                "args": [],
+                "options": {
+                    "cwd": "${workspaceFolder}/src"
+                },
+                "problemMatcher": [
+                    "$tsc"
+                ],
+                "presentation": {
+                    "reveal": "always",
+                    "clear": true
+                },
+                "group": "build"
+            },            
+            {
+                "label": "Run",
+                "command": "${workspaceFolder}/src/build/VisioneR2",
+                "type": "shell",
+                "args": [],
+                "problemMatcher": [
+                    "$tsc"
+                ],
+                "presentation": {
+                    "reveal": "always",
+                    "clear": true
+                },
+                "group": "build"
+            },
+            
+        ]
+    }
+}
