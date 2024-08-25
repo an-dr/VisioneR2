@@ -21,7 +21,12 @@
 
 #include "Quadrilateral.hpp"
 #include "opencv_tools.hpp"
-#include "ulog.h"
+
+
+// #include "ulog.h"
+#define log_debug printf
+#define log_error printf
+#define log_trace printf
 
 #include "ObjectFinder.hpp"
 

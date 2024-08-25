@@ -1,9 +1,9 @@
 [submodule "src/subprojects/microlog"]
-	path = src/subprojects/microlog
+	path = submodules/microlog
 	url = https://github.com/an-dr/microlog
 [submodule "src/subprojects/rEmotion"]
-	path = src/subprojects/rEmotion
+	path = submodules/rEmotion
 	url = https://github.com/an-dr/rEmotion.git
 [submodule "src/subprojects/r_giskard_EmotionCore"]
-	path = src/subprojects/EmotionCore
+	path = submodules/EmotionCore
 	url = https://github.com/an-dr/r_giskard_EmotionCore.git
